@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="music_container">
+            <h2 id="title">Path of Wind</h2>
+            <h3 id="artist">Joe Hisaishi</h3>
+            <div class="img_container">
+                <img src="img/mnt.png" alt="">
+            </div>
+
+            <audio src="music/mnt.mp3"></audio>
+
+            <!-- progress bar -->
+            <div class="progressbar_container" id="progressbar_container">
+                <div class="duration_meter">
+                    <div id="current_time">0:00</div>
+                    <div id="duration">--:--</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-- music controller -->
+            <div class="music_control">
+                <i class="fas fa-backward" id="prev" title="Prev"></i>
+                <i class="fas fa-play main_btn" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="a.js"></script>
+</body>
+
+</html>
